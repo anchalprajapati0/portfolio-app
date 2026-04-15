@@ -1,0 +1,84 @@
+.skills {
+  padding: 100px 60px;
+  background: #020617;
+  color: white;
+  text-align: center;
+}
+
+/* Title */
+.skills-title {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+/* Container */
+.skills-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Each Skill */
+.skill {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.skill p {
+  margin-bottom: 8px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Progress Fill */
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  animation: load 2s ease forwards;
+}
+
+/* Individual Skill Levels */
+.html {
+  width: 90%;
+  background: #38bdf8;
+}
+
+.css {
+  width: 85%;
+  background: #38bdf8;
+}
+
+.js {
+  width: 75%;
+  background: #38bdf8;
+}
+
+.react {
+  width: 80%;
+  background: #38bdf8;
+}
+
+.node {
+  width: 70%;
+  background: #38bdf8;
+}
+
+/* Animation */
+@keyframes load {
+  from {
+    width: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills {
+    padding: 80px 20px;
+  }
+}
