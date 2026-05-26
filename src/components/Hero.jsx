@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Hero.css";
-import heroImg from "../assets/hero.png";
+import profile from "../assets/profile.jpg";
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
         <h2>Full Stack Developer</h2>
 
         <p>
-          I build modern, responsive and high-performance web applications
+          I build modern, responsive and user-friendly web applications
           using React, JavaScript and Node.js.
         </p>
 
@@ -24,7 +24,7 @@ const Hero = () => {
             <button className="btn-primary">Contact Me</button>
           </a>
 
-          <a href="#">
+          <a href="#projects">
             <button className="btn-secondary">View Projects</button>
           </a>
         </div>
@@ -32,7 +32,9 @@ const Hero = () => {
 
       {/* Right Image */}
       <div className="hero-image">
-        <img src={heroImg} alt="hero" />
+        <div className="circle">
+          <img src={profile} alt="profile" />
+        </div>
       </div>
 
     </section>

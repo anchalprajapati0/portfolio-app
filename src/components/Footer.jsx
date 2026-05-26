@@ -19,11 +19,23 @@ const Footer = () => {
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        {/* Social Icons */}
+        {/* Social Links */}
         <div className="footer-socials">
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">Instagram</a>
+          <a 
+            href="https://www.linkedin.com/in/AnchalPrajapati" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          <a 
+            href="https://github.com/anchalprajapati0" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </div>
 
       </div>

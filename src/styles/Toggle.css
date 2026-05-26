@@ -1,0 +1,35 @@
+/* Button */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+/* Dark mode button */
+body.dark .toggle-btn {
+  background-color: #00ffcc;
+  color: black;
+}
+
+/* Light mode button */
+body.light .toggle-btn {
+  background-color: black;
+  color: white;
+}
+
+/* Body themes */
+body.dark {
+  background-color: #020617;
+  color: white;
+}
+
+body.light {
+  background-color: #f5f5f5;
+  color: black;
+}

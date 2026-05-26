@@ -1,53 +1,56 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/Projects.css";
 
 const Projects = () => {
+  const navigate = useNavigate();
 
   const projectData = [
     {
-      title: "Portfolio Website",
-      desc: "A modern personal portfolio built using React and Vite with responsive design.",
-    },
-    {
       title: "Login System",
       desc: "User authentication system with login and validation features.",
+      path: "/login",
     },
     {
       title: "Registration Form",
       desc: "A form with validation using React state management.",
+      path: "/registration",
     },
     {
       title: "Stopwatch",
       desc: "A stopwatch app with start, stop and reset functionality.",
+      path: "/stopwatch",
     },
     {
       title: "Counter App",
       desc: "Simple counter with increment and decrement functionality.",
+      path: "/counter",
     },
     {
       title: "Palindrome Checker",
       desc: "Checks whether a string is palindrome or not.",
+      path: "/palindrome",
     },
     {
       title: "Armstrong Number",
       desc: "Program to check Armstrong numbers using logic.",
+      path: "/armstrong",
     },
     {
       title: "Calculator App",
       desc: "Basic calculator performing arithmetic operations.",
-    },
-    {
-      title: "Dark/Light Theme",
-      desc: "Theme toggle feature using React hooks.",
+      path: "/calculator",
     },
     {
       title: "Google Maps Clone",
       desc: "Location-based app using map integration.",
+      path: "/map",
     },
     {
       title: "Weather App",
       desc: "Fetches real-time weather using API.",
-    }
+      path: "/weather",
+    },
   ];
 
   return (
@@ -58,12 +61,15 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div className="project-card" key={index}>
             <h3>{project.title}</h3>
+
             <p>{project.desc}</p>
 
-            <div className="project-buttons">
-              <a href="#"><button>Live</button></a>
-              <a href="#"><button>Code</button></a>
-            </div>
+            <button
+              className="view-btn"
+              onClick={() => navigate(project.path)}
+            >
+              View Project
+            </button>
           </div>
         ))}
       </div>
